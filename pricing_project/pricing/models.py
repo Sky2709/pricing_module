@@ -15,7 +15,7 @@ class PricingConfig(models.Model):
     additional_distance_price = models.DecimalField(max_digits=8, decimal_places=2)
 
 
-    rime_multipliers = models.JSONField(
+    time_multipliers = models.JSONField(
         default = list,
         help_text="JSON: [{'threshold':60, 'multiplier': 1.0}, ... ]"
     )
