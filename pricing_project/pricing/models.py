@@ -20,6 +20,10 @@ class PricingConfig(models.Model):
         help_text="JSON: [{'threshold':60, 'multiplier': 1.0}, ... ]"
     )
 
+    free_waiting_minutes = models.IntegerField(default=0)
+    waiting_charge_per_interval = models.DecimalField(max_digits=10, decimal_places=2, default=0)
+    waiting_charge_interval = models.IntegerField(default=0)
+
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
 
