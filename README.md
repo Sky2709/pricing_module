@@ -41,7 +41,7 @@ pricing-module/
 
 1. **Clone the repository**
     ```bash
-    git clone https://github.com/YOUR-USERNAME/pricing_module.git
+    git clone https://github.com/Sky2709/pricing_module.git
     cd pricing-module
     ```
 
