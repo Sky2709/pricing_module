@@ -5,8 +5,11 @@ from rest_framework import status
 from .models import PricingConfig
 from decimal import Decimal
 import json
+from rest_framework.permissions import IsAuthenticated
+
 
 class CalculatePriceAPI(APIView):
+    permission_classes = [IsAuthenticated]
     def post(self, request):
         data = request.data
 
