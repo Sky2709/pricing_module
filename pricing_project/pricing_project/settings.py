@@ -39,6 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'pricing',  # Your custom app for pricing
+    'django_json_widget',
+    'drf_yasg',
 ]
 
 MIDDLEWARE = [
